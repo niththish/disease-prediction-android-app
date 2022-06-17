@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/statusbar"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/diabetes_mellitus"
+            android:paddingLeft="25dp"
+            android:background="@color/primary"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:gravity="center_vertical"/>
+    </RelativeLayout>
+
+
+        <ScrollView
+            android:layout_below="@+id/statusbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="50dp"
+                android:paddingBottom="50dp">
+
+                <EditText
+                    android:maxLines="1"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/glucose_level"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/custom_input"
+                    android:hint="@string/glucose_level"
+                    android:padding="12dp"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:maxLines="1"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/insulin_level"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/glucose_level"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/custom_input"
+                    android:hint="@string/insulin_level"
+                    android:padding="12dp"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:maxLines="1"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/blood_pressure"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/insulin_level"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/custom_input"
+                    android:hint="@string/blood_pressure"
+                    android:padding="12dp"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:maxLines="1"
+                    android:inputType="number"
+                    android:id="@+id/pregnancy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/blood_pressure"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/custom_input"
+                    android:hint="@string/pregnancies"
+                    android:padding="12dp"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:maxLines="1"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/bmi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pregnancy"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/custom_input"
+                    android:hint="@string/bmi"
+                    android:padding="12dp"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:maxLines="1"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/pedigree_function"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/bmi"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/custom_input"
+                    android:hint="@string/diabetic_pedigree_function"
+                    android:padding="12dp"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:maxLines="1"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/skin_thickness"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pedigree_function"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/custom_input"
+                    android:hint="@string/skin_thickness"
+                    android:padding="12dp"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:maxLines="1"
+                    android:inputType="number"
+                    android:id="@+id/age"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/skin_thickness"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/custom_input"
+                    android:hint="@string/age"
+                    android:padding="12dp"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/predict_button"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:textSize="20sp"
+                    android:layout_below="@+id/age"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="@string/predict"/>
+
+            </RelativeLayout>
+
+
+        </ScrollView>
+
+</RelativeLayout>

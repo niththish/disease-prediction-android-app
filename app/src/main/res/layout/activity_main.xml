@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/statusbar"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/app_name"
+            android:paddingLeft="25dp"
+            android:background="@color/primary"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:gravity="center_vertical"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/statusbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="50dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:id="@+id/view1"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/diabetes"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/image1"
+                    android:contentDescription="@string/diabetes_mellitus"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="@string/diabetes_mellitus"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@color/primary"
+                    android:textColor="@color/white"
+                    android:layout_below="@+id/image1"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:id="@+id/view2"
+                android:layout_below="@+id/view1"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/hepatitis"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/image2"
+                    android:contentDescription="@string/hepatitis"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="@string/hepatitis"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@color/primary"
+                    android:textColor="@color/white"
+                    android:layout_below="@+id/image2"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:id="@+id/view3"
+                android:layout_below="@+id/view2"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/retinopathy"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/image3"
+                    android:contentDescription="@string/retinopathy"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="@string/retinopathy"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@color/primary"
+                    android:textColor="@color/white"
+                    android:layout_below="@+id/image3"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

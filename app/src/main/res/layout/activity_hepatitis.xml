@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/statusbar"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/hepatitis"
+            android:paddingLeft="25dp"
+            android:background="@color/primary"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:gravity="center_vertical"/>
+    </RelativeLayout>
+
+
+        <ScrollView
+            android:layout_below="@+id/statusbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="50dp"
+                android:paddingBottom="50dp">
+
+                <EditText
+                    android:id="@+id/age"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/custom_input"
+                    android:hint="@string/age"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:padding="12dp"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/age"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/custom_input"
+                    android:hint="@string/gender_m_f"
+                    android:maxLength="1"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:padding="12dp"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/alb"
+                    android:layout_below="@+id/gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/custom_input"
+                    android:hint="@string/alb"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:padding="12dp"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/alp"
+                    android:layout_below="@+id/alb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/custom_input"
+                    android:hint="@string/alp"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:padding="12dp"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/alt"
+                    android:layout_below="@+id/alp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/custom_input"
+                    android:hint="@string/alt"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:padding="12dp"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/ast"
+                    android:layout_below="@+id/alt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/custom_input"
+                    android:hint="@string/ast"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:padding="12dp"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/bil"
+                    android:layout_below="@+id/ast"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/custom_input"
+                    android:hint="@string/bil"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:padding="12dp"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/che"
+                    android:layout_below="@+id/bil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/custom_input"
+                    android:hint="@string/che"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:padding="12dp"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/chol"
+                    android:layout_below="@+id/che"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/custom_input"
+                    android:hint="@string/chol"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:padding="12dp"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/crea"
+                    android:layout_below="@+id/chol"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/custom_input"
+                    android:hint="@string/crea"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:padding="12dp"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/ggt"
+                    android:layout_below="@+id/crea"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/custom_input"
+                    android:hint="@string/ggt"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:padding="12dp"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/prot"
+                    android:layout_below="@+id/ggt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/custom_input"
+                    android:hint="@string/prot"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:padding="12dp"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/predict_button"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:textSize="20sp"
+                    android:layout_below="@+id/prot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="@string/predict"/>
+
+            </RelativeLayout>
+
+
+        </ScrollView>
+</RelativeLayout>

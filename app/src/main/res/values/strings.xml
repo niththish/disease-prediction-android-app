@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Disease Identifier</string>
+    <string name="diabetes_mellitus">DIABETES MELLITUS</string>
+    <string name="hepatitis">HEPATITIS</string>
+    <string name="retinopathy">DIABETIC RETINOPATHY</string>
+    <string name="title_activity_hepatitis">hepatitis</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="glucose_level">Glucose level</string>
+    <string name="insulin_level">Insulin level</string>
+    <string name="blood_pressure">Blood pressure</string>
+    <string name="pregnancies">Pregnancies</string>
+    <string name="bmi">BMI</string>
+    <string name="diabetic_predigree_function">Diabetic predigree function</string>
+    <string name="skin_thickness">Skin thickness</string>
+    <string name="age">Age</string>
+    <string name="predict">predict</string>
+    <string name="prot">PROT</string>
+    <string name="ggt">GGT</string>
+    <string name="crea">CREA</string>
+    <string name="chol">CHOL</string>
+    <string name="che">CHE</string>
+    <string name="bil">BIL</string>
+    <string name="ast">AST</string>
+    <string name="alt">ALT</string>
+    <string name="alp">ALP</string>
+    <string name="alb">ALB</string>
+    <string name="gender_m_f">Gender (M/F)</string>
+    <string name="select_image">SELECT IMAGE</string>
+    <string name="diabetic_pedigree_function">Diabetic pedigree function</string>
+    <string name="prediction">PREDICTION RESULT</string>
+</resources>
